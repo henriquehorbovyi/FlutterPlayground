@@ -1,8 +1,13 @@
 import 'package:flutter/widgets.dart';
-import 'package:provider_pattern/models/hero.dart';
+import 'package:provider_pattern/models/hero_model.dart';
+import 'package:provider_pattern/repositories/hero_repository.dart';
 
-class HerosController extends ChangeNotifier {
-  List<HeroModel> heros = [
+class HeroesController extends ChangeNotifier {
+
+  final HeroRepository heroRepository = HeroRepository();
+
+  
+  List<HeroModel> heroes = [
     HeroModel(name: "Iron Man", isFavorite: true),
     HeroModel(name: "Thor", isFavorite: true),
     HeroModel(name: "Captain America", isFavorite: true),
