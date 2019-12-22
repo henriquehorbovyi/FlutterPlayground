@@ -1,7 +1,7 @@
-class Hero {
+class HeroModel {
   String name;
   bool isFavorite;
 
-  Hero({this.name, this.isFavorite});
+  HeroModel({this.name, this.isFavorite = false});
 
 }

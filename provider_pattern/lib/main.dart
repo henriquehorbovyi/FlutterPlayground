@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:provider_pattern/controllers/heros.dart';
 import 'package:provider_pattern/home.dart';
 
 void main() => runApp(HerosApp());
@@ -9,7 +10,7 @@ class HerosApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        // TODO: implement my providers here
+        ChangeNotifierProvider<HerosController>.value(value: HerosController())
       ],
       child: MaterialApp(
         title: 'Flutter Provider Test',
