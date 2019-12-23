@@ -1,6 +1,6 @@
 # awesome_widgets
 
-A new Flutter project.
+A project to keep some awesome widgets.
 
 ## Getting Started
 
