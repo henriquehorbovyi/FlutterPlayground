@@ -1,0 +1,31 @@
+name: todo_app
+description: A new Flutter project.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+
+dependencies:
+  path_provider: ^1.5.1
+  hive: ^1.2.0
+  dio: ^3.0.7
+  flutter_mobx: ^0.3.4+2
+  mobx: ^0.3.10
+  bloc_pattern: ^2.5.1
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  mockito: ^4.1.1
+  mobx_codegen: ^0.3.10+1
+  build_runner: ^1.7.2
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+scripts:
+  build: flutter pub run build_runner build
+  clean: flutter pub run build_runner clean
