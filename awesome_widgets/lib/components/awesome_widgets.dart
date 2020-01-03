@@ -7,14 +7,19 @@ class AwesomeWidgets extends StatelessWidget {
       child: Column(
         children: <Widget>[
           SizedBox(height: 16),
-          Text("Awesome Widgets", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+          Text(
+            "Awesome Widgets",
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          ),
           SizedBox(height: 16),
           Wrap(
             children: <Widget>[
-              listTile("Wrap", () { 
+              listTile("Wrap", () {
                 Navigator.pushNamed(context, "/wrap");
               }),
-              listTile("B", () { print("B tapped"); }),
+              listTile("ClipRRect", () {
+                Navigator.pushNamed(context, "/clipRRect");
+              }),
             ],
           )
         ],
