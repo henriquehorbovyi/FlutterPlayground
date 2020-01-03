@@ -20,6 +20,9 @@ class AwesomeWidgets extends StatelessWidget {
               listTile("ClipRRect", () {
                 Navigator.pushNamed(context, "/clipRRect");
               }),
+              listTile("MediaQuery", () {
+                Navigator.pushNamed(context, "/mediaQuery");
+              }),
             ],
           )
         ],
