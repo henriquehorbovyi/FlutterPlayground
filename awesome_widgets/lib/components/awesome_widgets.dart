@@ -23,6 +23,9 @@ class AwesomeWidgets extends StatelessWidget {
               listTile("MediaQuery", () {
                 Navigator.pushNamed(context, "/mediaQuery");
               }),
+              listTile("Align", () {
+                Navigator.pushNamed(context, "/align");
+              }),
             ],
           )
         ],
